@@ -36,6 +36,7 @@ func listBucket() (resp *s3.ListBucketsOutput) {
 		exitErrorf("Unable to list buckets, %v", err)
 	}
 
+	return resp
 }
 
 func main() {
