@@ -10,6 +10,7 @@ type Topic struct {
 	TopicTitle string `dynamodbav:"topic_title" json: "topicTitle"`
 	TopicBody  string `dynamodbav:"topic_body" json: "topicBody"`
 	ResponseId string `dynamodbav:"response_id" json: "responseId"`
+	InterestedParties string `dynamodbav:"interested_parties" json: "interestedParties"`
 }
 
 func TopicsGetter(dynaSvc dynamodb.Client, w http.ResponseWriter, r *http.Request) http.HandlerFunc {
